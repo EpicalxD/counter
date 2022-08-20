@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project | Bug counter</title>
+  </head>
+  <body>
+    <div class="counter">
+      <h1 class="light-text">Garden Bug Counter</h1>
+      <div class="a-container">
+        <div class="button-section">
+          <div class="button-container">
+            <div class="first-btn">
+              <button class="btn green-btn" onclick="adder()">+</button>
+              <button class="btn green-btn" onclick="substracter() ">-</button>
+            </div>
+            <button class="btn blue-btn" onclick="saveNum()">Save</button>
+          </div>
+
+          <div class="number-display">
+            <p id="number">0</p>
+          </div>
+        </div>
+
+        <div class="entries">
+          <div class="text-container">
+            <p>Previous entries:</p>
+            <p id="previous"></p>
+          </div>
+          <button class="btn btn-red" onclick="clearNum()">Clear</button>
+        </div>
+      </div>
+      <p class="disclaimer light-text">
+        Disclaimer <br />The application idea is inspired by the instructors
+        from <a href="https://scrimba.com/">Scrimba</a> and I can not claim it
+        as mine. But I many total modifications to the design and I changed and
+        added more features to the app.
+      </p>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
